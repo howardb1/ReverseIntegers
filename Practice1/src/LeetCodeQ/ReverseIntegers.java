@@ -1,8 +1,8 @@
 package LeetCodeQ;
-
+import java.util.Scanner;
 public class ReverseIntegers {
 	
-
+	
 public int reverse (int x)	{
 	
 	int p = (int) Math.pow(2, 31);
@@ -13,42 +13,34 @@ public int reverse (int x)	{
 		return 0;
 	}
 	
-	String newstr = Integer.toString(x);
+	String str = Integer.toString(x);
+	
+	StringBuilder sb = new StringBuilder(str);
+	
+	String newStr = sb.reverse().toString();
+	
+	int z = Integer.parseInt(newStr);
 	
 	
 	
 	
 	
 	
-	return 0;
+		/*
+		 * for(int i = str.length() - 1; i >= 0; i--) { sb.append(str.charAt(i)); }
+		 * 
+		 * String newstr = sb.append(str.charAt(i));
+		 */
+	
+	
+	return z;
 	
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		
 		System.out.println("Input: ");
 		
