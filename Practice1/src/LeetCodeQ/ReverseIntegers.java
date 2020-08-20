@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ReverseIntegers {
 	
 	
-public int reverse (int x)	{
+public static int reverse (int x)	{
 	
 	int p = (int) Math.pow(2, 31);
 	int n = (int) Math.pow(-2, 31);
@@ -39,13 +39,18 @@ public int reverse (int x)	{
 
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {	
+	Scanner sc = new Scanner(System.in);
+	
+	System.out.print("Input: ");
+		int num = sc.nextInt();
+		int revNum = reverse(num);
 		
 		
-		System.out.println("Input: ");
+	System.out.println("Output: " + revNum);
 		
 		
-		System.out.println("Output");
+		
 		
 	}
 
