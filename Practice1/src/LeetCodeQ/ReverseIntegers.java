@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class ReverseIntegers {
 	
 	
-public static int reverse (int x)	{
+	
+	
+	public static int reverse (int x)	{
 	
 	int p = (int) Math.pow(2, 31);
 	int n = (int) Math.pow(-2, 31);
@@ -17,7 +19,17 @@ public static int reverse (int x)	{
 	
 	StringBuilder sb = new StringBuilder(str);
 	
+	
+
 	String newStr = sb.reverse().toString();
+	
+	for (int i = 0; i <= str.length(); i++) {
+		if (str.charAt(i) == '-') {
+			return i;
+		}
+	}
+	
+	
 	
 	int z = Integer.parseInt(newStr);
 	
@@ -26,16 +38,10 @@ public static int reverse (int x)	{
 	
 	
 	
-		/*
-		 * for(int i = str.length() - 1; i >= 0; i--) { sb.append(str.charAt(i)); }
-		 * 
-		 * String newstr = sb.append(str.charAt(i));
-		 */
-	
-	
 	return z;
 	
 }
+
 
 	
 	
